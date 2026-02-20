@@ -1,0 +1,214 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+  background: #020617;
+     color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background: #efede7;
+  color: #2d3142;
+  padding: 40px 20px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+/* PROFILE */
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #2d3142;
+  margin-bottom: 15px;
+}
+
+.profile h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  background: #2d3142;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* SIDEBAR MENU */
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 18px 0;
+}
+
+.sidebar ul li a {
+  color: #2d3142;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+  color: #0077b6;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  margin-left: 300px;
+  padding: 50px 60px;
+  min-height: 100vh;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 60px;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+/* RESUME TWO COLUMN */
+.resume-container {
+  display: flex;
+  gap: 50px;
+}
+
+.resume-column {
+  flex: 1;
+}
+
+/* RESUME ITEMS */
+.resume-item {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 2px solid #38bdf8;
+  position: relative;
+}
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: #38bdf8;
+  border-radius: 50%;
+}
+
+/* LINKS */
+a {
+  color: #38bdf8;
+}
+
+a:hover {
+  color: #0ea5e9;
+}
+
+/* CONTACT */
+.contact p {
+  margin-bottom: 10px;
+}
+
+/* FIX HERO */
+.hero {
+  padding-top: 0;
+}
+
+/* MOBILE SUPPORT */
+@media screen and (max-width: 900px) {
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 30px;
+  }
+
+  .resume-container {
+    flex-direction: column;
+  }
+
+}
+/* CONTACT SECTION FIX */
+.contact {
+  max-width: 700px;
+}
+
+.contact-text {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 3px solid #38bdf8;
+}
+
+.contact-item a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}
